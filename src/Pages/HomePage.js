@@ -15,7 +15,8 @@ const HomePage = () => {
         display="flex"
         justifyContent="center"
         p={3}
-        bg={"white"}
+        // bg={"white"}
+        bg={"#9FA7BF"}
         w="100%"
         m="40px 0 15px 0"
         borderRadius="lg"
@@ -23,11 +24,12 @@ const HomePage = () => {
       >
         <Text fontSize="4xl" color={"black"}>
           {" "}
-          Chat Application{" "}
+          SkillXchg{" "}
         </Text>
       </Box>
       <Box
         bg={"white"}
+        // bg={"#9FA7BF"}
         w={"100%"}
         p={4}
         borderRadius={"lg"}

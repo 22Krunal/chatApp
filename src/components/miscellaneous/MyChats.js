@@ -45,7 +45,9 @@ const MyChats = () => {
     flexDir={"column"}
     alignItems={"center"}
     p={3}
-    bg={"white"}
+    // bg={"white"}
+    bg={"#9FA7BF"}
+    color={"white"}
     w={{base : "100%", md : "31%"}}
     borderRadius={"lg"}
     borderWidth={"1px"}>
@@ -62,14 +64,15 @@ const MyChats = () => {
         <Button
         display={"flex"}
         fontSize={{base : "17px", md : "10px", lg:"17px"}}
-        rightIcon={<AddIcon/>}>new Group</Button>
+        rightIcon={<AddIcon/>}>new Community</Button>
         </GroupChatModal>
       </Box>
       <Box
       display={"flex"}
       flexDir={"column"}
       p={3}
-      bg={"#F8F8F8"}
+      // bg={"#F8F8F8"}
+      bg={"#233855"}
       w={"100%"}
       h={"100%"}
       borderRadius={"lg"}
@@ -81,14 +84,16 @@ const MyChats = () => {
                 <Box
                 onClick={()=>{setselectedChat(chat)}}
                 cursor={"pointer"}
-                bg={selectedChat === chat? "#38B2AC" : "#E8E8E8"}
-                color={selectedChat === chat? "white" : "black"}
+                // bg={selectedChat === chat? "#38B2AC" : "#E8E8E8"}
+                bg={selectedChat === chat? "#69738E" : "#233855"}
+                color={selectedChat === chat? "white" : "white"}
                 px={3}
                 py={2}
                 borderRadius={"lg"}
                 key={chat._id}
                 _hover={{
-                  background: "#38B2AC",
+                  background:"#69738E",
+                  // background: "#38B2AC",
                   color: "white",
                 }}>
                   <Text>{!chat.isGroupChat?(getSender(loggedUser,chat.users)):(chat.chatName)}</Text>

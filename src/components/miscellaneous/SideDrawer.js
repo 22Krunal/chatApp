@@ -89,7 +89,8 @@ const SideDrawer = () => {
     display="flex"
     justifyContent="space-between"
     alignItems={"center"}
-    bg={"white"}
+    // bg={"white"}
+    bg={"#23355"}
     w={"100%"}
     p={"5px 10px 5px 10px"}
     borderWidth={"5px"}>
@@ -100,7 +101,7 @@ const SideDrawer = () => {
             </Button>
         </Tooltip>
         <Text fontSize={"2xl"}>
-            Chat Application
+            SkillXchg
         </Text>
         <div>
             <Menu>
@@ -123,9 +124,9 @@ const SideDrawer = () => {
             </Menu>
         </div>
     </Box>
-    <Drawer placement='left' onClose={onClose} isOpen={isOpen}>
+    <Drawer placement='left' onClose={onClose} isOpen={isOpen} bg="black">
         <DrawerOverlay/>
-        <DrawerContent>
+        <DrawerContent bg={"#233855"} color={"white"}> 
             <DrawerHeader borderBottomWidth={"1px"}>search User</DrawerHeader>
         <DrawerBody>
             <Box display="flex"  pb={2}>

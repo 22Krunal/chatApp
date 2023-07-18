@@ -114,7 +114,7 @@ const GroupChatModal = ({children}) => {
           <ModalHeader
           fontSize={"35px"}
           display={"flex"}
-          justifyContent={"center"}>Create Group Chat</ModalHeader>
+          justifyContent={"center"}>Create Community</ModalHeader>
           <ModalCloseButton />
           <ModalBody
           display={"flex"}
@@ -147,7 +147,7 @@ const GroupChatModal = ({children}) => {
           <ModalFooter>
             {/* create group chat */}
             <Button colorScheme='blue'  onClick={handleSubmit}>
-              Create Group
+              Create Community
             </Button>
           </ModalFooter>
         </ModalContent>
